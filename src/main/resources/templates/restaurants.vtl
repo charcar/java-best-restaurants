@@ -1,0 +1,9 @@
+<h1>List of restaurants:</h1>
+
+#foreach ($restaurant in $restaurants)
+
+<a href="/restaurants/restaurant.getId()">$restaurant.getName()</a>
+
+#end
+
+<a href="/restaurants/new">Add a new restaurant</a>

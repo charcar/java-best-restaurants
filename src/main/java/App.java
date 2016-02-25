@@ -24,9 +24,10 @@ public class App {
     *******************************************************/
     get("/new-restaurant", (request, reponse) -> {
       HashMap<String, Object> model = new HashMap<String, Object>();
-      model.put("template", "templates/newrestaurant.vtl");
+      model.put("template", "templates/new-restaurant.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
+
 
     /******************************************************
     STUDENTS:
